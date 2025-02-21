@@ -1,5 +1,6 @@
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from "recharts";
+import './TopTimeline.css';
 
 const data = [
     { name: "Jobs", value: 40, color: "#9b51e0" }, // Purple

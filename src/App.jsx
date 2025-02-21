@@ -4,12 +4,12 @@ import Header from "./components/Header/Header.jsx";
 import Map from './components/Map/Map.jsx';
 import Timeline from './components/Timeline/Timeline.jsx';
 import TopTimeline from './components/TopTimeline/TopTimeline.jsx';
+import Sidebar from './components/Sidebar/Sidebar.jsx'
 //import SmallGrid from "./components/Card/SmallGrid.jsx";
 import redLogo from '/src/images/red-logo.png';
 import greenLogo from '/src/images/green-logo.png';
 import purpleLogo from '/src/images/purple-logo.png';
 import blueLogo from '/src/images/blue-logo.png';
-
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,7 +20,9 @@ const App = () => {
             <Header />
             <div className="main-body">
                 {/* Left Sidebar */}
-                <div className="left-sidebar"></div>
+                <div className="left-sidebar">
+                    <Sidebar />
+                </div>
 
                 {/* Center Grid */}
                 <div className="center-grid">
