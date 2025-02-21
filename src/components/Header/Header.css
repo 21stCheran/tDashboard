@@ -1,24 +1,76 @@
-.header {
+.header-container {
     display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
 }
 
-.header-button {
-    margin-right: 10px;
-    padding: 8px 12px;
-    background: #f0f0f0;
+.header-row {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.first-row {
+    justify-content: flex-start;
+}
+
+.close-icon {
+    color: gray;
+    margin: 8px;
+    font-size: 0.85rem;
+}
+
+.thin-icon {
+    font-weight: 200;
+}
+
+.divider {
     border: none;
-    border-radius: 5px;
+    border-top: 1px solid lightgray;
+    margin: 0;
+}
+
+.second-row {
+    justify-content: space-between;
+}
+
+.view-button {
+    background-color: lightgray;
+    color: gray;
+    border: none;
+    padding: 4px px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 0.8rem;
     cursor: pointer;
 }
 
+.options-icon {
+    margin-right: 4px;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 8px;
+}
+
 .add-ticket-button {
-    padding: 8px 12px;
-    background: #00cc44;
+    background-color: green;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.append-bonus-button {
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+    padding: px 8px;
+    border-radius: 8px;
+    font-size: 0.8rem;
     cursor: pointer;
 }

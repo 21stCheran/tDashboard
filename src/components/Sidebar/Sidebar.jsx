@@ -1,32 +1,18 @@
+// src/components/Sidebar/Sidebar.jsx
 import React from 'react';
-import './Sidebar.css';
 
 const Sidebar = () => {
     return (
-        <div className="sidebar">
-            <div className="user-details">
-                <img src="user-image.png" alt="Driver" className="user-image" />
-                <h3>Driver</h3>
-                <p>Standard</p>
-                <p>Rating: 5.0 | Experience: 1</p>
-            </div>
-
-            <div className="user-contact">
-                <p>Contact: +91 9876543210</p>
-                <p>Email: driver@roadpilot.co.in</p>
-                <p>Address: India</p>
-            </div>
-
-            <div className="documents">
-                <button>Aadhar Card Front</button>
-                <button>Aadhar Card Back</button>
-                <button>Driving License Front</button>
-                <button>Driving License Back</button>
-            </div>
-
-            <div className="sidebar-actions">
-                <button className="edit-button">Edit</button>
-                <button className="suspend-button">Suspend</button>
+        <div className="bg-light p-3 h-100">
+            <h5>Documents</h5>
+            <button className="btn btn-outline-primary w-100 mb-2">Aadhar Card Front</button>
+            <button className="btn btn-outline-primary w-100 mb-2">Aadhar Card Back</button>
+            <button className="btn btn-outline-primary w-100 mb-2">Driving License Front</button>
+            <button className="btn btn-outline-primary w-100 mb-2">Driving License Back</button>
+            <button className="btn btn-outline-success w-100 mb-2">Verified</button>
+            <div className="mt-3">
+                <button className="btn btn-primary w-100 mb-2">Edit</button>
+                <button className="btn btn-danger w-100">Suspend</button>
             </div>
         </div>
     );
