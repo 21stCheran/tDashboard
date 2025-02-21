@@ -37,11 +37,19 @@
     height: 50%;
 }
 
+/* Updated .small-grid styles */
 .small-grid {
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #ccc;
-    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding and borders are included in height/width */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content at the top with space for growth */
+    overflow: hidden; /* Prevent content overflow */
+    text-align: center;
 }
 
 .activity-timeline-grid {
@@ -58,7 +66,7 @@
 }
 
 .top-timeline-grid {
-    width: 50%;
+    width: 70%;
     height: 100%;
     background-color: #fff;
     border-radius: 10px;
@@ -66,9 +74,44 @@
 }
 
 .location-grid {
-    width: 50%;
-    height: 100%;
+    width: 30%; /* Ensure it takes 50% of the parent width */
+    height: 100%; /* Fill the allocated height */
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #ccc;
+    overflow: hidden; /* Prevent content overflow */
+    padding: 10px; /* Add padding around the content */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack title and map vertically */
+    gap: 10px; /* Add spacing between the text and map */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+    .location-grid > .leaflet-container {
+        width: 100%; /* Take up the full width of the location-grid */
+        height: calc(100% - 40px); /* Adjust height to fit the container minus padding/spacing */
+        border-radius: 8px; /* Round the edges */
+    }
+
+/*CARD*/
+
+.card-icon img {
+    max-width: 50%; /* Make the logo smaller to fit comfortably */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.2rem; /* Reduce font size slightly */
+    font-weight: bold;
+    margin: 8px 0; /* Add vertical spacing */
+}
+
+/* Description styling */
+.card-description {
+    font-size: 0.8rem; /* Reduce font size for the description */
+    color: grey;
+    margin: 0;
+    word-wrap: break-word; /* Handle long text gracefully */
 }

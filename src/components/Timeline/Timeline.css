@@ -1,0 +1,85 @@
+/* Main Timeline Container */
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    position: relative;
+}
+
+/* Timeline Item Style */
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent items from shrinking in small screens */
+    position: relative;
+}
+
+/* Timeline Icon */
+.timeline-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Timeline Content */
+.timeline-content {
+    text-align: center;
+}
+
+.timeline-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.timeline-link {
+    font-size: 0.875rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.timeline-time {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* Dot Below Each Timeline Item */
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px; /* Place the dot slightly below the item */
+}
+
+/* Connector Between Dots */
+.timeline-connector {
+    width: 100px;
+    height: 4px;
+    background-color: #e0e0e0; /* Neutral color for the line */
+    position: absolute;
+    bottom: -18px; /* Align with the dot */
+    left: calc(100% - 50px); /* Position between two dots */
+    z-index: -1; /* Place behind the dots */
+}
