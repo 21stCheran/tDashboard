@@ -5,6 +5,7 @@
 }
 
 .header-row {
+    margin: 0px 2px;
     display: flex;
     align-items: center;
     padding: 9px;

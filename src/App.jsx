@@ -1,17 +1,35 @@
+// App.jsx
 import './App.css';
 import Header from "./components/Header/Header.jsx";
-import Sidebar from "./components/Sidebar/Sidebar.jsx";
-import StatCard from "./components/StatCard/StatCard.jsx";
-import Timeline from "./components/Timeline/Timeline.jsx";
-import TopTimelineChart from "./components/Chart/TopTimelineChart.jsx";
-import Footer from "./components/Footer/Footer.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
     return (
-        <div className="d-flex flex-column vh-100">
+        <div className="app-container">
             <Header />
-            
+            <div className="main-body">
+                {/* Left Sidebar */}
+                <div className="left-sidebar"></div>
+
+                {/* Center Grid */}
+                <div className="center-grid">
+                    {/* Group Grid */}
+                    <div className="group-grid">
+                        {Array.from({ length: 16 }).map((_, index) => (
+                            <div key={index} className="small-grid"></div>
+                        ))}
+                    </div>
+
+                    {/* Timeline Grid */}
+                    <div className="timeline-grid"></div>
+
+                    {/* Bottom Nested Grids */}
+                    <div className="bottom-nested-grid">
+                        <div className="left-nested"></div>
+                        <div className="right-nested"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
