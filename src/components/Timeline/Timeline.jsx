@@ -40,6 +40,7 @@ const Timeline = () => {
 
     return (
         <div className="timeline-container">
+        <h5>User Activity Timeline</h5>
             {timelineData.map((item, index) => (
                 <div key={item.id} className="timeline-item">
                     {/* Timeline Content */}
