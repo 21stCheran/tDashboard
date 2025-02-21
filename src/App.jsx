@@ -20,14 +20,14 @@ const App = () => {
                         ))}
                     </div>
 
-                    {/* Timeline Grid */}
-                    <div className="timeline-grid"></div>
-
-                    {/* Bottom Nested Grids */}
-                    <div className="bottom-nested-grid">
-                        <div className="left-nested"></div>
-                        <div className="right-nested"></div>
+                    {/* Center Nested Grids */}
+                    <div className="center-nested-grid">
+                        <div className="top-timeline-grid"></div>
+                        <div className="location-grid"></div>
                     </div>
+
+                    {/* Timeline Grid */}
+                    <div className="activity-timeline-grid"></div>
                 </div>
             </div>
         </div>

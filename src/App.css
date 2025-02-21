@@ -44,20 +44,20 @@
     height: 100%;
 }
 
-.timeline-grid {
+.activity-timeline-grid {
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #ccc;
     height: 25%;
 }
 
-.bottom-nested-grid {
+.center-nested-grid {
     display: flex;
     gap: 10px;
     height: 25%;
 }
 
-.left-nested {
+.top-timeline-grid {
     width: 50%;
     height: 100%;
     background-color: #fff;
@@ -65,7 +65,7 @@
     border: 1px solid #ccc;
 }
 
-.right-nested {
+.location-grid {
     width: 50%;
     height: 100%;
     background-color: #fff;
